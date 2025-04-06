@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinicius Perez | Portfólio</title>
+    <meta name="description" content="Portfólio profissional com projetos em TI e desenvolvimento">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/mediaqueries.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="#inicio" class="logo">
+                <img src="./src/imagens/foguete.png" alt="Logo VP" class="logo-icon">
+            </a>
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="hero">
+        <video autoplay muted loop id="hero-video">
+            <source src="./src/videos/fundo.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Vinicius Perez</h1>
+            <p>Desenvolvedor Full Stack & Especialista em TI</p>
+            <div class="hero-buttons">
+                <a href="#projetos" class="btn btn-primary">
+                    <span>Ver Projetos</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contato" class="btn btn-secondary">
+                    <span>Contato</span>
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+                <a href="#sobre" class="btn btn-outline">
+                    <span>Sobre</span>
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+        <a href="#sobre" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </header>
+
+    <!-- Seção Sobre Mim -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-photo">
+                    <img src="./src/imagens/perfil.jpg" alt="Vinicius Perez">
+                    <div class="photo-border"></div>
+                </div>
+                <div class="about-text">
+                    <p>Técnico em instalção e TI grau II, com experiência ampla e aplicada em soluções tecnológicas completas, desde configuração até desenvolvimento de sistemas web responsivos.</p>
+                    <p>Minha abordagem combina conhecimento técnico profundo com atenção às necessidades do cliente, garantindo soluções eficientes e escaláveis. Mais abaixo, você pode dar uma olhada em alguns dos meus projetos e conhecer melhor o meu trabalho.</p>
+                    
+                    <h3>Principais Habilidades:</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="./src/imagens/icones/icons8-html5.svg" alt="HTML5" class="skill-icon">
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./src/imagens/icones/icons8-css.svg" alt="CSS3" class="skill-icon">
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./src/imagens/icones/icons8-javascript.svg" alt="JavaScript" class="skill-icon">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./src/imagens/icones/automação.png" alt="Automação" class="skill-icon">
+                            <span>WOW Automação</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./src/imagens/icones/icons8-subwoofer-50.png" alt="Audio&video" class="skill-icon">
+                            <span>Aúdio e Vídeo</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./src/imagens/icones/icons8-câmera-bullet-64.png" alt="CFTV" class="skill-icon">
+                            <span>CFTV</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="section">
+        <div class="container">
+            <h2 class="section-title">Projetos</h2>
+            
+            <!-- Projeto 1 -->
+            <article class="project-card" data-project="projeto1">
+                <h3 class="project-title">Sistema de Áudio/Vídeo</h3>
+                <div class="project-content">
+                    <div class="project-media">
+                        <div class="main-media">
+                            <img src="./src/imagens/projeto1/home.jpg" alt="Sistema AV" class="main-media-content">
+                        </div>
+                        <div class="media-thumbnails">
+                            <div class="thumb active" data-type="image" data-src="./src/imagens/projeto1/home.jpg">
+                                <img src="./src/imagens/projeto1/home.jpg" alt="Página 1">
+                            </div>
+                            <div class="thumb" data-type="image" data-src="./src/imagens/projeto1/sistema.jpg">
+                                <img src="./src/imagens/projeto1/sistema.jpg" alt="Página 2">
+                            </div>
+                            <div class="thumb" data-type="video" data-src="./src/videos/projeto1/audio.mp4" data-poster="./src/imagens/projeto1/imagemaudio.jpg">
+                                <img src="./src/imagens/projeto1/imagemaudio.jpg" alt="Vídeo Demo" class="video-thumbnail">
+                                <div class="play-icon"><i class="fas fa-play"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-info">
+                        <h4>Detalhes do Projeto</h4>
+                        <p>Sistema completo de gerenciamento de áudio e vídeo para ambientes corporativos, com controle centralizado e interface intuitiva.</p>
+                        <div class="tech-tags">
+                            <span><i class="fa-solid fa-play"></i> Vídeo</span>
+                            <span><i class="fa-solid fa-volume-high"></i> Aúdio</span>
+                            <span><i class="fa-solid fa-film"></i>Home Cinema</span>
+                        </div>
+                        <button class="btn btn-primary open-lightbox" data-project="projeto1">
+                            <span>Ver Projeto</span>
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Projeto 2 -->
+            <article class="project-card" data-project="projeto2">
+                <h3 class="project-title">Automação Residencial e Empresarial</h3>
+                <div class="project-content">
+                    <div class="project-media">
+                        <div class="main-media">
+                            <img src="./src/imagens/projeto2/Alexa.jpg" alt="Automação Residencial" class="main-media-content">
+                        </div>
+                        <div class="media-thumbnails">
+                            <div class="thumb active" data-type="image" data-src="./src/imagens/projeto2/Alexa.jpg">
+                                <img src="./src/imagens/projeto2/Alexa.jpg" alt="Página 1">
+                            </div>
+                            <div class="thumb" data-type="image" data-src="./src/imagens/projeto2/echo show.jpg">
+                                <img src="./src/imagens/projeto2/echo show.jpg" alt="Página 2">
+                            </div>
+                            <div class="thumb" data-type="video" data-src="./src/videos/projeto2/automação.mp4" data-poster="./src/imagens/projeto2/imagemautomação.jpg">
+                                <img src="./src/imagens/projeto2/imagemautomação.jpg" alt="Vídeo Demo" class="video-thumbnail">
+                                <div class="play-icon"><i class="fas fa-play"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h4>Detalhes do Projeto</h4>
+                        <p>Sistema de automação residencial com controle de iluminação, temperatura e segurança integrado.</p>
+                        <div class="tech-tags">
+                            <span><i class="fa-solid fa-cloud"></i>Alexa</span>
+                            <span><i class="fa-solid fa-mobile"></i>App automação</span>
+                            <span><i class="fa-solid fa-robot"></i></i> Casa Inteligente</span>
+                        </div>
+                        <button class="btn btn-primary open-lightbox" data-project="projeto2">
+                            <span>Ver Projeto</span>
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Projeto 3 -->
+            <article class="project-card" data-project="projeto3">
+                <h3 class="project-title">Infraestrutura de Redes e CFTV</h3>
+                <div class="project-content">
+                    <div class="project-media">
+                        <div class="main-media">
+                            <img src="./src/imagens/projeto3/mesh e cam.jpg" alt="Rede 1" class="main-media-content">
+                        </div>
+                        <div class="media-thumbnails">
+                            <div class="thumb active" data-type="image" data-src="./src/imagens/projeto3/mesh e cam.jpg">
+                                <img src="./src/imagens/projeto3/mesh e cam.jpg" alt="Rack 1">
+                            </div>
+                            <div class="thumb" data-type="image" data-src="./src/imagens/projeto3/rede.jpg">
+                                <img src="./src/imagens/projeto3/rede.jpg" alt="Rack 2">
+                            </div>
+                            <div class="thumb" data-type="image" data-src="./src/imagens/projeto3/video porteiro.jpg">
+                                <img src="./src/imagens/projeto3/video porteiro.jpg" alt="CFTV">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h4>Detalhes do Projeto</h4>
+                        <p>Implantação completa de infraestrutura de rede corporativa com alta disponibilidade e segurança.</p>
+                        <div class="tech-tags">
+                            <span><i class="fas fa-sitemap"></i> VLANs</span>
+                            <span><i class="fas fa-bolt"></i> Fibra Óptica</span>
+                            <span><i class="fa-solid fa-house-signal"></i> Wi-fi Expert</span>
+                        </div>
+                        <button class="btn btn-primary open-lightbox" data-project="projeto3">
+                            <span>Ver Projeto</span>
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <button class="lightbox-nav prev"><i class="fas fa-chevron-left"></i></button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <video id="lightbox-video" controls>
+                <source src="" type="video/mp4">
+                Seu navegador não suporta vídeos HTML5.
+            </video>
+        </div>
+        <button class="lightbox-nav next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="section">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Vamos conversar!</h3>
+                    <p>Estou disponível para novos projetos e oportunidades. Entre em contato através do formulário ou diretamente pelos canais abaixo:</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>vinicius.work18@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(17) 99241-1660</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Localização</h4>
+                            <p>Barretos -SP, Brasil</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/Vinicius-Perez" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/vinícius-perez-da-silva/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/vini_pesilva/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <h3>Envie uma Mensagem</h3>
+                    <div class="form-group">
+                        <input type="text" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Seu E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Enviar Mensagem</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./src/imagens/foguete.png" alt="Logo VP" class="logo-icon">
+                    <span>Vinicius Perez</span>
+                </div>
+                <p>&copy; <span id="year"></span> Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/js/main.js"></script>
+</body>
+</html>

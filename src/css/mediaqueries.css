@@ -1,0 +1,130 @@
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-photo {
+        margin-bottom: 2rem;
+        max-width: 300px;
+        margin-left: 0;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .project-content {
+        grid-template-columns: 1fr;
+    }
+
+    .main-media {
+        aspect-ratio: 16/9;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: var(--dark-bg);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s ease;
+    }
+    
+    .menu.active {
+        right: 0;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 250px;
+        margin: 0.5rem 0;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 4rem 0;
+    }
+    
+    .project-title {
+        font-size: 1.25rem;
+        padding: 1rem;
+    }
+    
+    .project-content {
+        padding: 1.5rem;
+    }
+    
+    .lightbox-nav {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .section {
+        padding: 3rem 0;
+    }
+
+    .media-thumbnails {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .thumb {
+        width: 30%;
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
